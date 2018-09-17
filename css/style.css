@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border: 10px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+div:nth-child(1) {
+    position: absolute;
+    margin: 5% 5%;
+    z-index: 1;
+}
+
+div:nth-child(1):hover~div.bg p.red,
+div:nth-child(2):hover~div.bg p.green,
+div:nth-child(3):hover~div.bg p.blue,
+div:nth-child(4):hover~div.bg p.orange {
+    opacity: 1;
+}
+
+div:nth-child(2) {
+    position: absolute;
+    margin: 5% 5%;
+    right: 0;
+    z-index: 1;
+}
+
+div:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    margin: 5% 5%;
+    z-index: 1;
+}
+
+div:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5% 5%;
+    z-index: 1;
+}
+
+.bg p {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 100vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+p.red {
+    opacity: 0;
+}
+
+p.green {
+    opacity: 0;
+}
+
+p.blue {
+    opacity: 0;
+}
+
+p.orange {
+    opacity: 0;
+}
+
+.red {
+    background-color: rgb(228, 68, 68);
+}
+
+.green {
+
+    background-color: rgb(61, 194, 61);
+}
+
+.blue {
+    background-color: rgb(60, 60, 190);
+}
+
+.orange {
+    background-color: rgb(224, 132, 56);
+}
